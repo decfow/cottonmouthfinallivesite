@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* makes body fill full height of viewport */
+    box-sizing: border-box; /* makes width/height include padding + border */
+}
+
+header {
+    position: relative;
+    height: 50vh; /* 50% of viewport height */
+    width: 100%;
+    overflow: hidden; /* hides anything spilling outside which is crucial for the video header */
+}
+
+#center-cont{
+    width: 100%;
+    height: 100%;
+    display: grid; /* turns this into a grid layout */
+    grid-template-columns: 10% 80% 10%; /* 3 columns the middle one designated for content*/
+}
+
+/* logo in header */
+header img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centered */
+    transition: filter 0.3s ease, transform 0.2s ease;
+    cursor: pointer; /* changes cursor so apparent you can click */
+}
+
+header img:hover {
+  filter: invert(1); /* inverts logo colour (click even more apparent) */
+}
+
+#video-background {
+    position: absolute; /* sits inside header */
+    top: 0%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* pushes video behind logo */
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover; /* Makes the video cover the area without stretching and maintains aspect ratio */
+}
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    text-align: center;
+}
+
+.nav-item{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+
+.nav-item a {
+  transition: letter-spacing 0.2s ease; /* subtle hover animation for nav content */
+}
+
+.nav-item a:hover {
+  letter-spacing: 1px;
+}
+
+.line {
+  width: 90%;
+  margin: 20px auto; 
+  border: 0;
+  border-top: 2px solid #000000;
+}
+
+p{
+  text-align: center;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+h1{
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: 100px;
+}
+h2{
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* different link states */
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:active{
+    color: rgb(169, 30, 34);
+}
+
+a:hover{
+    font-weight: 600;
+}
+
+/* Slideshow container 1 */
+#Slides1 {
+  max-width: 70%; /* limits width (matches headings) */
+  position: relative; /* to properly allow the arrows inside */
+  margin: auto; /* centers horizontally */
+}
+
+#Slides2 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+#Slides3 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+#Slides4 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+#Slides5 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+#Slides6 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+/* slideshow arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease; /* hover */
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0; /* places right arrow */
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /* adds background when arrow is hovered over */
+}
+
+.Slides1 img,
+.Slides2 img,
+.Slides3 img,
+.Slides4 img,
+.Slides5 img,
+.Slides6 img {
+  transition: transform 0.3s ease;
+}
+
+.Slides1 img:hover,
+.Slides2 img:hover,
+.Slides3 img:hover,
+.Slides4 img:hover,
+.Slides5 img:hover,
+.Slides6 img:hover {
+  transform: scale(1.02); /* slight hover effect on all slides */
+}
+
+/* slideshow headings */
+h3{
+  max-width: 70%; /* aligns with slides */
+  margin: 0 auto 1% auto; /* removes top margin */
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h4{
+  max-width: 70%;
+  margin: 0 auto 1% auto;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h5{
+  max-width: 70%;
+  margin: 0 auto 1% auto; 
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h6{
+  max-width: 70%;
+  margin: 0 auto 1% auto;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* grids for artist page */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid, minimum 250px per item */
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #000000;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: block;
+      color: inherit;
+      text-decoration: none;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+/* lightbox on click */
+.lightbox {
+  display: none; /* hidden by default */
+  position: fixed; /* covers whole screen */
+  z-index: 1;
+  padding-top: 1.5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* dark overlay */
+}
+
+/* lightbox slides */
+.lightbox-content {
+  display: block;
+  margin: auto;
+  max-width: 95%;
+  max-height: 95vh; /* fills almost entire screen height */
+}
+
+/* lightbox X to close */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px; /* top right corner */
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Slides1 img,
+.Slides2 img {
+  cursor: pointer;
+}
+
+/* same as first arrows but inside of the lightbox */
+.lightbox-prev,
+.lightbox-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.lightbox-prev {
+  left: 10px;
+}
+
+.lightbox-next {
+  right: 10px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+h3, h4, h5, h6 {
+  font-size: clamp(18px, 4vw, 40px); /* font scales with screen, never smaller than 18px, never bigger than 40px */
+}
+
+@media screen and (max-width: 480px) {
+       /* Stack grid into 1 column */
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    /* make images fill the container nicely */
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* adjust text size */
+    .grid-item {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* header height tweak */
+    header {
+        height: 30vh;
+    }
+     /* nav Bar fix */
+        #nav-bar {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .nav-item a {
+        display: block;
+        width: 100%;
+    }
+    
+    }

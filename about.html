@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header>
+ 
+        <div id="center-cont">
+            <div></div> 
+
+            <div>
+                <a href="index.html"> 
+                <img src="VideoFolder/CMheadertext.png">
+                </a>
+            </div> 
+
+            <div></div>
+        </div>
+        
+        <video autoplay muted loop playsinline id="video-background">
+            <source src="VideoFolder/VideoHeader.mp4" type="video/mp4">
+        </video>
+
+</header>
+
+<div id="nav-bar"> 
+    <div class="nav-item"> <a href="archive.html">ARCHIVE</a></div>
+    <div class="nav-item"> <a href="about.html">OUR ZINE</a></div>
+    <div class="nav-item"> <a href="art.html">ARTISTS</a></div>
+</div>
+
+<hr class="line">
+
+<script src="js.js" defer></script>
+
+<!-- Slideshow container -->
+<div id="Slides1">
+
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part1.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part2.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part3.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part4.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part5.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part6.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part7.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part8.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part9.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides1">
+    <img src="CM1/cottonmouthprintspreads_Part10.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+</div>
+<br>
+
+<h3>COTTON MOUTH ISSUE #1</h3>
+
+<div id="Slides2">
+
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part0.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part1.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part2.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part3.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part4.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part5.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part6.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part7.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part8.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part9.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+   <div class="Slides2">
+    <img src="CM2/Issue2_Part10.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part11.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part12.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+   <div class="Slides2">
+    <img src="CM2/Issue2_Part13.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part14.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+  <div class="Slides2">
+    <img src="CM2/Issue2_Part15.jpg" style="width:100%" onclick="openLightbox(this)">
+  </div>
+
+  <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+</div>
+<br>
+
+<h4>COTTON MOUTH ISSUE #2</h4>
+
+<div id="lightbox" class="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+
+  <a class="lightbox-prev" onclick="changeLightboxSlide(-1)">&#10094;</a>
+  <img class="lightbox-content" id="lightbox-img">
+  <a class="lightbox-next" onclick="changeLightboxSlide(1)">&#10095;</a>
+</div>
+
+<div class="end-box">
+  <p>The end — For now.</p>
+</div>
+
+</body>
+</html>
